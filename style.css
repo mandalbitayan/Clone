@@ -8,6 +8,7 @@ nav{
     border-bottom: 1px solid rgba(159, 156, 156, 0.2);
     margin: 15px;
     padding: 6px;
+    flex-wrap: wrap;
 }
 nav > .heading{
     margin: 2px;
@@ -42,7 +43,7 @@ nav > .heading{
 }
 #hero{
     display: flex;
-    justify-content: center; 
+    justify-content: center;
 }
 #categories{
       display: flex;
@@ -100,4 +101,34 @@ nav > .heading{
 }
 .quantity{
     margin-left: 10px;
+}
+#downloads{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(247, 245, 240);
+}
+.socialmedia_logo{
+    font-size: 35px;
+}
+.downloadlogo{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.l>p{
+    font-size: 14px;
+    color: rgb(154, 153, 153);
+    line-height: 18px;
+    margin: 12px;
+}
+
+
+
+
+#about_blinkit{
+    font-size: 14px;
+    color: rgb(154, 153, 153);
+    line-height: 18px;
+    margin: 12px;
 }
