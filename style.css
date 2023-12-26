@@ -2,6 +2,9 @@
     padding: 0;
     margin: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -102,13 +105,35 @@ nav > .heading{
 .quantity{
     margin-left: 10px;
 }
+table{
+    width: 100%;
+    margin: 10px;
+}
+.useful_link{
+    flex: 2;
+}
+#important_links{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 26px;
+}
+td{
+    line-height: 2;
+    font-weight: 500;
+    color: rgb(154, 153, 153);
+}
+.categories{
+    flex: 4;
+}
 #downloads{
     display: flex;
     justify-content: space-around;
     background-color: rgb(247, 245, 240);
 }
 .socialmedia_logo{
-    font-size: 35px;
+    font-size: 30px;
+    display: column;
 }
 .downloadlogo{
     display: flex; 
@@ -122,13 +147,29 @@ nav > .heading{
     line-height: 18px;
     margin: 12px;
 }
-
-
-
-
 #about_blinkit{
     font-size: 14px;
     color: rgb(154, 153, 153);
     line-height: 18px;
     margin: 12px;
 }
+ @media screen and(max-width:500px){
+   #hero{
+    display: none;
+   } 
+   nav{
+    flex-direction: column;
+   }
+   #about_blinkit{
+    width: 90%;
+    text-align: justify;
+   }
+   #downloads{
+    width: 190%;
+    text-align: justify;
+    flex-direction: column;
+   }
+   .socialmedia_logo{
+    margin-top: 20px;
+   }
+ }
